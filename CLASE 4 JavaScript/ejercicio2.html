@@ -6,29 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Cual es mayor?</title>
-    
+
 </head>
 
 <body>
     <script>
 
         var array = [];
-        for (var i = 0; i < 10; i++) {
-            array.push(prompt('Ingresa diez numeros'));
+        for (var i = 0; i < 3; i++) {
+            array.push(prompt('Ingresa tres numeros'));
         }
-    
-        var numeroMayor = 0
-
-        for (j = 0; array.length; j++) {
-            if (array[j] > numeroMayor) {
-            array[j] = numeroMayor;
-            }
-        }
-
+        if (array[0]>array[1] && array[0]>array[2]){
+		  document.write('el mayor es el '+ array[0]);
+		}else{
+		  if (array[1]>array[2])  {
+		    document.write('el mayor es el '+array[1]); 
+		  }else{
+		    document.write('el mayor es el '+array[2]);
+		  }
+		}
         
 
-       document.write(numeroMayor)
-        
     </script>
 
 </body>
