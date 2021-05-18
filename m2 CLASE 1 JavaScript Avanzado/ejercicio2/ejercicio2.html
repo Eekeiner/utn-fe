@@ -7,32 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio2 de Javascript Avanzado</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <script> </script>
 </head>
 
 <body>
     <form action="formulario.html" method="GET">
-    
+
         <div>
             <textarea id="texto"> hola</textarea>
         </div>
 
-        <div id="contador"> Cantidad de caracteres= document.write("contador1") </div>
+        <div> <span id="contador"></span> </div>
     </form>
 
     <script>
-        const contadorCarac = document.getElementById("contador");  
-        const caracteresText = document.getElementById("texto");
-        const caracInicial = 0;
-
-        caracteresText.addEventListener('input', e => {
-            const contador1 = caracInicial + caracteresText.value.length;
-
-            console.log(contador1)                    
-
+        var contadorCarac = document.getElementById("contador");
+        var caracteresText = document.getElementById("texto");
+    
+        caracteresText.addEventListener('keyup', () => {
+            contadorCarac.innerText =  caracteresText.value.length
+            
         });
-        
-        contador1.textContent
+
+
     </script>
 </body>
 
