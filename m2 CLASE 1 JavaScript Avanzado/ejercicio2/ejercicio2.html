@@ -17,17 +17,22 @@
             <textarea id="texto"> hola</textarea>
         </div>
 
-        <div>
-            <button id="boton">Enviar</button>
-        </div>
+        <div id="contador"> Cantidad de caracteres= document.write("contador1") </div>
     </form>
 
     <script>
-        var boton = document.getElementById('boton');
-        boton.addEventListener('click', function(e)
-        alert(e.target.innerText)
-        console.log(e)
+        const contadorCarac = document.getElementById("contador");  
+        const caracteresText = document.getElementById("texto");
+        const caracInicial = 0;
 
+        caracteresText.addEventListener('input', e => {
+            const contador1 = caracInicial + caracteresText.value.length;
+
+            console.log(contador1)                    
+
+        });
+        
+        contador1.textContent
     </script>
 </body>
 
