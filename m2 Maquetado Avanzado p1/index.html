@@ -13,65 +13,129 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/icono.png" alt="" width="auto" height="24" class="d-inline-block align-text-top">
-                  Optica Expresion Visual
-              </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Productos </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#"> Reviews </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#"> Sucursales </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#"> Contacto </a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-danger" type="submit">Buscar</button>
-            </form>
-          </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="img/icono.png" alt="" width="auto" height="24" class="d-inline-block align-text-top">
+                Optica Expresion Visual
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Productos </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#"> Reviews </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#"> Sucursales </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#"> Contacto </a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-danger" type="submit">Buscar</button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
 
        <!-- fin del navbar -->
-      <div class="container-fluid">
-        <div id="home" class="row align-items-center hero">
-          <div class="col-lg-3 offset-lg-2">
-            <p>Bajada</p>
-            <h1>Optica Expresion Visual</h1>
-            <p>En esta temorada, encontra todos los lentes que neceistas para el verano. Ademas contamos con anteojos de sol con proteccion para los rayos UV. Contactanos para mas información.</p>
-          </div>
-        
-        </div>
+  <div class="container-fluid">
+    <div id="home" class="row align-items-center hero">
+      <div class="col-lg-3 offset-lg-2">
+        <p>Bajada</p>
+        <h1>Optica Expresion Visual</h1>
+        <p>En esta temorada, encontra todos los lentes que neceistas para el verano. Ademas contamos con anteojos de sol con proteccion para los rayos UV. Contactanos para mas información.</p>
       </div>
+    
+    </div>
+  </div>
 
       <!-- fin del home -->
-      
-      <div id="novedades" class="row py-4">
-        <div class="col-md-5 offset-md-2 py-3">
-          <h2>Novedades</h2>
-          <ul class="lista-novedades">
-            <li><a href="#" data-toggle="modal" data-target="#modalEjemplo"><img src="img/anteojos1.png"></a></li>
-            <li><a href="#" data-toggle="modal" data-target="#modalEjemplo"><img src="img/anteojos2.png"></a></li>
-            <li><a href="#" data-toggle="modal" data-target="#modalEjemplo"><img src="img/anteojos3.png"></a></li>
-          </ul>
-        </div>
+  
+  <div id="novedades" class="row py-4">
+    <div class="col-md-5 offset-md-2 py-3">
+      <h2>Novedades</h2>
+      <ul class="lista-novedades">
+        <li><a href="#" data-bs-toggle="modal" data-bs-target="#anteojos1modal"><img src="img/anteojos1.png"></a></li>
+        <li><a href="#" data-bs-toggle="modal" data-bs-target="#anteojos1modal2"><img src="img/anteojos2.png"></a></li>
+        <li><a href="#" data-bs-toggle="modal" data-bs-target="#anteojos1modal3"><img src="img/anteojos3.png"></a></li>
+      </ul>
+    </div>
+  </div> 
+ <!--      fin de lista  -->
+ 
+ <div class="modal fade" id="anteojos1modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Anteojos de leer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+      <div class="modal-body">
+        Estos anteojos son lo mejor que hay en tecnología de lectura. La verdad que no te vas a arrepentir de comprar estos hermosos anteojos. Compralos ya.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- fin del modal anteojos1 -->
+
+<div class="modal fade" id="anteojos1modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Anteojos de leer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Este modelito esta muy bueno. Llevalo.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- fin del modal anteojos2 -->
+
+<div class="modal fade" id="anteojos1modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Anteojos de leer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Este modelo es el mas nuevo que tenenmos. 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- fin del modal anteojos3 -->
+
+
+
 <footer class="text-center"> 
   <p> 
     Diseñado por Emanuel Keiner

@@ -13,6 +13,7 @@ h1, h2{
 .hero{
     background: url(../img/senior.jpg), no-repeat;
     background-size: cover;
+    background-position-y: center;
     height: 50vh;
     min-height: 600px;
     color: white;
