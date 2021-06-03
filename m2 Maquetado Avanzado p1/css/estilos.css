@@ -19,6 +19,10 @@ h1, h2{
     color: white;
 }
 
+#novedades{
+    padding-top: 0px;
+}
+
 .lista-novedades{
     margin: 0;
     padding: 0;
@@ -55,8 +59,7 @@ h1, h2{
 }
 
 .testimonios{
-    background-color: #dadada;
-    padding-bottom: 4rem !important;
+   padding-bottom: 4rem !important;
 
 }
 
@@ -80,12 +83,21 @@ h1, h2{
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-  }
+}
 
 .carousel-control-prev-icon::before {
     font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f191";
+    color: grey;
   }
 
 .carousel-control-next-icon::before {
     font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f152";
-}
+    color: gray;
+ }
+
+.footer{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    color: white;
+ }
+
