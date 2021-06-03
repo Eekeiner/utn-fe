@@ -66,28 +66,26 @@ h1, h2{
 }
 
 
-
 .carousel-control-prev-icon, .carousel-control-next-icon{
     background-image: none;
-
-}
-.carousel-control-prev-icon:after, .carousel-control-next-icon:after{
-    font-family: "FontAwesome 5 Free";
-    font-size: 30px;
-    color: #000;
-
+    font-size: 50px;
 }
 
-.carousel-control-prev-icon:after {
-    content: "\f137"
+.carousel-control-prev-icon:before, .carousel-control-next-icon:before{
+      font-size: 50px;
 }
+.carousel-control-prev-icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
 
-.carousel-control-next-icon:after {
-    content: "\f061"
+.carousel-control-prev-icon::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f191";
+  }
+
+.carousel-control-next-icon::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f152";
 }
-
-.carousel-indicators li {
-    background-color: #000;
-}
-
-
