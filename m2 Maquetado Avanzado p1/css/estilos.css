@@ -19,9 +19,8 @@ h1, h2{
     color: white;
 }
 
-#novedades{
-    padding-top: 0px;
-}
+.py-3{
+padding: 0px;}
 
 .lista-novedades{
     margin: 0;
