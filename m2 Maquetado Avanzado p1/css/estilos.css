@@ -100,3 +100,10 @@ padding: 0px;}
     color: white;
  }
 
+#nosotros{
+    background-color: gray;
+}
+
+.card-group{
+    border: 0;
+}
