@@ -1,4 +1,3 @@
-m3 node/bin/www
 m3 node/node_modules/.bin/handlebars
 m3 node/node_modules/.bin/handlebars.cmd
 m3 node/node_modules/.bin/handlebars.ps1
@@ -1449,9 +1448,3 @@ m3 node/node_modules/xdg-basedir/index.js
 m3 node/node_modules/xdg-basedir/license
 m3 node/node_modules/xdg-basedir/package.json
 m3 node/node_modules/xdg-basedir/readme.md
-m3 node/public/stylesheets/style.css
-m3 node/routes/index.js
-m3 node/routes/users.js
-m3 node/views/error.hbs
-m3 node/views/index.hbs
-m3 node/views/layout.hbs
