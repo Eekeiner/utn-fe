@@ -71,7 +71,7 @@ app.get('/nosotros', function (req, res) {
 
   res.render('pagina', {
     nombre: 'nosotros',
-    vistas: req.session.vistas[req.originalUrl]
+    vistas: req.session.visitas[req.originalUrl]
   });
 });
 
