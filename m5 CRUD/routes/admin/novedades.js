@@ -3,7 +3,7 @@ var router = express.Router();
 var novedadesModel = require('../../models/novedadesModel')
 
 
-/* GET home page. */
+/* GET lista de novedades */
 router.get('/', async function (req, res, next) {
 
     var novedades = await novedadesModel.getNovedades();
@@ -13,5 +13,13 @@ router.get('/', async function (req, res, next) {
         novedades
     });
   });
+
+
+/* para eliminar una novedad */
+router.get('/eliminar/:id', async (req, res, next) => {
+    var id = req.params.id;
+    await novedadesModel.deleteNovedadById(id);
+    res.redirect('/admin/novedades')
+});    
 
   module.exports = router;
