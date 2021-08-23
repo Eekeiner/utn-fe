@@ -7,10 +7,17 @@ var uploader = util.promisify(cloudinary.uploader.upload);
 var destroy = util.promisify(cloudinary.uploader.destroy);
 
 
-/* GET lista de novedades */
+/* GET lista de novedades - buscador */
 router.get('/', async function (req, res, next) {
 
-  var novedades = await novedadesModel.getNovedades();
+  /* var novedades = await novedadesModel.getNovedades(); */
+  var novedades
+  if(req.query.q === undefined) {
+    novedades = await novedadesModel.getNovedades();
+
+  } else {
+    novedades = await novedadesModel.buscarNovedades(req.query.q);
+  }
 
   novedades = novedades.map(novedad =>{
     if (novedad.img_id) {
