@@ -41,7 +41,9 @@ router.get('/', async function (req, res, next) {
   res.render('admin/novedades', {
     layout: 'admin/layout',
     usuario: req.session.nombre,
-    novedades
+    novedades,
+    is_search: req.query.q !== undefined,
+    q: req.query.q
   });
 });
 

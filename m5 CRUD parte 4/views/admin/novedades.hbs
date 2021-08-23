@@ -19,8 +19,10 @@
                         Nuevo</a>
                 </div>
                 <form class="d-flex" action="/admin/novedades" method="get">
-                    <input class="form-control me-2" type="search" placeholder="Ingrese palabra clave" aria-label="Buscar" name="q">
-                    <button class="btn btn-outline-success" type="submit"> <i class="" aria-hidden="true"></i>Buscar</button>
+                    <input class="form-control me-2" type="search" placeholder="Ingrese palabra clave"
+                        aria-label="Buscar" name="q" {{#if q}} value="{{q}}"{{/if}}>
+                    <button class="btn btn-outline-success" type="submit"> <i class=""
+                            aria-hidden="true"></i>Buscar</button>
                 </form>
             </div>
         </div>
@@ -58,8 +60,12 @@
                     </tr>
                     {{/each}}
                 </tbody>
-
             </table>
+            {{#if is_search}}
+            {{#unless novedades.length}}
+            No se encontraron resultados para "<b>{{q}}</b>"
+            {{/unless}}
+            {{/if}}
         </div>
     </div>
 
