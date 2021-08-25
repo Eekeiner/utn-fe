@@ -9,27 +9,104 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="/stylesheets/style.css">
-    
+    <script src="https://kit.fontawesome.com/5575fcfbb1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;900&family=Saira:wght@400;600&display=swap"
+        rel="stylesheet">
+
+
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><i class="fas fa-glasses"></i> optica keiner </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Pricing</a>
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">nosotros |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">servicios |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">temporada '21 |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">productos |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">contacto |</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    lo que tus ojos necesitan
+                </span>
             </div>
         </div>
-    </nav>
+    </nav> {{!-- fin del navbar --}}
+
+    <div class="container-fluid py-2">
+        <div id="home" class="row align-items-center hero">
+            <div class="col-lg-5 offset-lg-1">
+                <p></p>
+                <h1>optica keiner</h1>
+                <p> Te invitamos a conocer nuestra nueva gama de anteojos. Para que ver bien, se vea bien.</p>
+            </div>
+        </div>
+    </div> {{!-- fin de home --}}
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../images/car1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/car2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/car3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div> {{!-- fin de carousel --}}
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="column">
+                <img src="../images/noproduct.jpg" class="" alt="...">
+            </div>
+            <div class="column">
+                <img src="../images/noproduct.jpg" class="" alt="...">
+            </div>
+            <div class="column">
+                <img src="../images/noproduct.jpg" class="" alt="...">
+            </div>
+            
+        </div> {{!-- servicios --}}
+
+    </div>
+
+
+    <div id="productos" class="col py-4">
+        <h2>productos</h2>
+        <ul class="lista-novedades">
+            {{#each novedades}}
+            <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal{{id}}"><img src="{{imagen}}"
+                        width="120">{{titulo}}</a>
+            </li>
+            {{/each}}
+        </ul>
+    </div> {{!-- fin de productos --}}
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
         integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"

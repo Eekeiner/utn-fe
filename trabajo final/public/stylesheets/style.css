@@ -1,8 +1,33 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Saira', sans-serif;
+ /*  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
 }
 
 a {
   color: #00B7FF;
 }
+ 
+.navbar-brand {
+  font-family: 'Playfair Display SC', serif;  
+}
+
+
+#home{
+  font-family: 'Playfair Display SC', serif;
+  background: url(../images/home.jpg), no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  height: 50vh;
+  min-height: 200px;
+  color: white;
+
+}
+
+.carousel-item{
+  height: 200px;
+}
+.row{
+  display: flex;
+}
+
