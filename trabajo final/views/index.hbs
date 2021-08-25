@@ -77,24 +77,29 @@
         </div>
     </div> {{!-- fin de carousel --}}
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="column">
-                <img src="../images/noproduct.jpg" class="" alt="...">
-            </div>
-            <div class="column">
-                <img src="../images/noproduct.jpg" class="" alt="...">
-            </div>
-            <div class="column">
-                <img src="../images/noproduct.jpg" class="" alt="...">
-            </div>
-            
-        </div> {{!-- servicios --}}
 
-    </div>
+    <div class="row servicios py-2" id="servicios">
+        <h2>servicios</h2>
+        <div class="col text-center">
+            <i class="fas fa-sun fa-7x"></i>
+            <p>lentes de sol</p>
+        </div>
+        <div class="col text-center">
+            <i class="fas fa-asterisk fa-7x"></i>
+            <p>lentes aéreos</p>
+        </div>
+        <div class="col text-center">
+            <i class="fas fa-glasses fa-7x"></i>
+            <p>lentes multifocales</p>
+        </div>
+        <div class="col text-center">
+            <i class="fas fa-eye fa-7x"></i>
+            <p>contactología</p>
+        </div>
+    </div> {{!-- servicios --}}
 
 
-    <div id="productos" class="col py-4">
+    <div class="row" id="productos">
         <h2>productos</h2>
         <ul class="lista-novedades">
             {{#each novedades}}
