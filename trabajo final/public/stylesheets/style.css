@@ -44,5 +44,10 @@ p.servicios{
 .footer{
   font-style: italic;
   background-color:gray;
+  color: white;
   
+}
+.adminfooter{
+  margin-top: 50px;
+  text-align-last: right;
 }
