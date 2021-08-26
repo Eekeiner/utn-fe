@@ -31,11 +31,23 @@ a {
   display: flex;
 }
 
-.imagen {
+.imagen{
   max-width: 100%;
   height: auto;
 }
 
 p.servicios{
   margin-top: 50px;
+}
+
+.footer{
+  font-style: italic;
+  background-color:gray;
+  
+}
+
+.card-img-top {
+ /*  height: 320px;
+  /* width: auto; */
+
 }
