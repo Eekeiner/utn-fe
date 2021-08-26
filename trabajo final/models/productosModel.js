@@ -1,27 +1,27 @@
 var pool = require('./bd');
 
-async function getNovedades() {
+async function getProductos() {
 
-    var query = "SELECT * from NOVEDADES";
+    var query = "SELECT * from productos";
     var rows = await pool.query(query);
     return rows;
 }
 
-module.exports = { getNovedades }
+module.exports = { getProductos }
 
-/* esto es para borrar una novedad by el ID */
-async function deleteNovedadById(id) {
+/* esto es para borrar un producto by el ID */
+async function deleteProductoById(id) {
 
-    var query = 'delete from novedades where id = ?';
+    var query = 'delete from productos where id = ?';
     var rows = await pool.query(query, [id]);
     return rows;
 }
 
-/* para agregar una novedad a la tabla de novedades */
-async function insertNovedad(obj) {
+/* para agregar una producto a la tabla */
+async function insertProducto(obj) {
     try {
 
-        var query = "insert into novedades set ? ";
+        var query = "insert into productos set ? ";
         var rows = await pool.query(query, [obj]);
         return rows;
     } catch (error) {
@@ -30,16 +30,16 @@ async function insertNovedad(obj) {
     }
 }
 
-/* traigo los datos para modificar una sola novedad  */ 
-async function getNovedadById(id){
-    var query = "select * from novedades where id=?";
+/* traigo los datos para modificar un solo producto  */ 
+async function getProductoById(id){
+    var query = "select * from productos where id=?";
     var rows = await pool.query(query, [id]);
     return rows[0];
 }
 
-async function modificarNovedadById(obj, id){
+async function modificarProductoById(obj, id){
     try {
-        var query = "update novedades set ? where id=?";
+        var query = "update productos set ? where id=?";
         var rows = await pool.query(query, [obj, id]);
         return rows;
     } catch (error){
@@ -48,11 +48,11 @@ async function modificarNovedadById(obj, id){
 }
 
 //buscador
-async function buscarNovedades(busqueda) {
-    var query = "select * from novedades where titulo like ? OR subtitulo like ? OR cuerpo like ?";
-    var rows = await pool.query(query, ['%' + busqueda + '%', '%' + busqueda + '%', '%' + busqueda +'%']);
+async function buscarProductos(busqueda) {
+    var query = "select * from productos where marca like ? OR modelo like ?";
+    var rows = await pool.query(query, ['%' + busqueda + '%', '%' + busqueda + '%']);
     return rows;
 }
 
 
-module.exports = { getNovedades, deleteNovedadById, insertNovedad, getNovedadById,  modificarNovedadById, buscarNovedades}
+module.exports = { getProductos, deleteProductoById, insertProducto, getProductoById,  modificarProductoById, buscarProductos}
