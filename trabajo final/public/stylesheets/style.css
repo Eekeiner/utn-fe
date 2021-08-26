@@ -10,6 +10,7 @@ a {
  
 .navbar-brand {
   font-family: 'Playfair Display SC', serif;  
+  font-size: x-large;
 }
 
 
@@ -44,10 +45,4 @@ p.servicios{
   font-style: italic;
   background-color:gray;
   
-}
-
-.card-img-top {
- /*  height: 320px;
-  /* width: auto; */
-
 }
