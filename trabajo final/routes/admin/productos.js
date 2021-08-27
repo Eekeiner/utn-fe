@@ -51,7 +51,7 @@ router.get('/', async function (req, res, next) {
 /* para eliminar un producto*/
 router.get('/eliminar/:id', async (req, res, next) => {
   var id = req.params.id;
-  let producto = await productosModel.getNovedadById(id);
+  let producto = await productosModel.getProductoById(id);
   if (producto.img_id) {
     await (destroy(producto.img_id));
 }
@@ -108,10 +108,10 @@ router.post('/agregar', async (req, res, next) => {
 /* traer un producto para poder modificarlo */
 router.get('/modificar/:id', async (req, res, next) => {
   var id = req.params.id;
-  var novedad = await productosModel.getNovedadById(id);
+  var producto = await productosModel.getProductoById(id);
   res.render('admin/modificar', { //modificar.hbs
     layout: 'admin/layout',
-    novedad
+    producto
   });
 });
 

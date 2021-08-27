@@ -108,10 +108,11 @@
 
     <div class="row" id="productos">
         <h2>productos</h2>
-        <ul class="lista-novedades">
-            {{#each novedades}}
-            <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal{{id}}"><img src="{{imagen}}"
-                        width="120">{{titulo}}</a>
+        <ul class="lista-productos">
+            {{#each productos}}
+            <li>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal{{id}}">
+                    <img src="{{imagen}}" width="120">{{marca}}</a>
             </li>
             {{/each}}
         </ul>
@@ -121,7 +122,7 @@
         <div class="col">
             <h2>ubicacion</h2>
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.4502871044356!2d-68.35055858650622!3d-34.618059580455736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967909d16d2ee3c5%3A0xe2e9bc01a8bc82c5!2sUrbana%20meducal!5e0!3m2!1sen!2sar!4v1623025845654!5m2!1sen!2sar"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.2493577789514!2d-60.51569234850235!3d-31.736393981206906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44d8b47499a83%3A0x8ae12486c604d1cb!2sFrancisco%20Soler%201362%2C%20Paran%C3%A1%2C%20Entre%20R%C3%ADos!5e0!3m2!1sen!2sar!4v1630031737199!5m2!1sen!2sar"
                 width="400" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="col md-8" id="contacto">
