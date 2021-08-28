@@ -1,0 +1,25 @@
+<div class="container" style="margin : 100px auto">
+    <div class="row">
+        <div class="col-6 offset-3 ">
+            <h4>Agregar un nuevo producto</h4>
+            <form action="/admin/productos/agregar" method="post" enctype="multipart/form-data"> {{!-- enctype para que
+                pueda recibir imagenes --}}
+                <div class="form-group py-2">
+                    <input type="text" class="form-control" placeholder="Marca" name="marca">
+
+                </div>
+                <div class="form-group py-2">
+                    <textarea type="text" class="form-control" placeholder="Modelo" name="modelo"></textarea>
+
+                </div>
+                <div class="form-group py-2">
+                    <label>Imagen: <input type="file" name="imagen" id="imagen"> </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+            {{#if error}}
+            <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>
